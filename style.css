@@ -1,0 +1,145 @@
+:root {
+    
+        --branco-principal: #FFFFFF;
+        --cinza-secundario: #c0c0c0;
+        --botao-azul: #167bf7;
+        --cor-fundo: #00030c;
+        --fonte-principal: 'Inter';
+    }
+body { 
+    background-color: var(--cor-fundo); 
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+
+}
+.principal {
+ background-image:url("Background.png") ;  
+ background-repeat: no-repeat;
+ background-size: contain; 
+ text-align: center;
+
+}
+ .container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.container__botao {
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+
+}
+.container__botao:hover{
+    background-color: white;
+    color: #00030c;
+    
+}
+.container__titulo{
+    font-size: 28px;
+}
+.botao_2 {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal)
+}
+.aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario);
+
+}
+.container__imagem {
+    margin: 1em 0 2em 0;
+}
+.container__caixa {
+    margin: 0 6em;
+}
+/*Processo de estilização da pagina abaixo da principal a segui deste ponto*/
+.secundario {
+    align-items: center;
+    margin:  0 10em;
+   
+
+}
+ 
+.secundario__imagem {
+    width: 80%;
+    
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.3em;
+}
+.descricao__text {
+    font-size: 20px;
+    
+}
+
+/*processo de estilização da 3ª section */
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao { 
+    padding: 5em;
+}
+
+/*processo de estilização da 4ª section*/
+.dispositivos__titulo {
+    margin: 5em 0;
+    font-size: 48px;
+    color: var(--branco-principal);
+}
+.dispositivos__lista {
+    list-style-type: none;
+    display:flex;
+    justify-content: center;
+    font-size: 32px;
+
+}
+
+.dispositivos {
+    text-align: center;
+}
+/*processo de estilização do rodape*/
+
+.rodape {
+    text-align: center;
+}
+.rodape__logo{
+    margin-top: 4em;
+}
+.rodape__lista{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 3em
+   
+}
+
+.lista__link {
+    text-decoration: none;
+    color: var(--branco-principal);
+    font-size: 20px;
+    padding: 1em;
+}
+.rodape__texto{
+    color: var(--cinza-secundario);
+    margin: 2em 0 2em;
+    text-align: center;
+}
+.rodape__lista a:hover {
+    color: var(--botao-azul);
+}
+.rodape__lista a:active{
+    color: purple;
+}
